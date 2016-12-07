@@ -4,7 +4,9 @@ This is a template for a bot that tweets latest papers to appear on RePEc for a 
 
 ## twitter
 
-1. Clone the repo by entering in your console "git clone https://github.com/guzey/repec_bot". then open the file variable_stuff.py.
+1. Clone the repo by entering the following in your console
+
+        git clone https://github.com/guzey/repec_bot
 
 2. Go to http://twitter.com/ and create an account for your bot. Go to http://apps.twitter.com/ and create a new app. For the "Website" field just enter your personal site or htpp://somethingrandom.com if you don't have one.
 

@@ -1,4 +1,4 @@
-This is a template for a bot that tweets latest papers to appear on RePEc for a given JEL code(s).
+This is a template for a bot that tweets latest papers to appear on RePEc for a given JEL code(s). The original bot: [@econhist](https://twitter.com/econhist/)
 
 # Setup
 

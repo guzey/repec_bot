@@ -48,7 +48,7 @@ def main():
     api = tweepy.API(auth)
 
     # repec page with last papers; jel=d82 is mechanism design code
-    web_page = requests.get('http://econpapers.repec.org/scripts/search.pf?sort=date;jel=' + jel_codes + '&iframes=no')
+    web_page = requests.get('https://econpapers.repec.org/scripts/search.pf?sort=date;jel=' + jel_codes + '&iframes=no')
     web_page_text = bs4.BeautifulSoup(web_page.text, "html.parser")
 
     # get tweets to be able to check if paper was tweeted already
@@ -67,7 +67,7 @@ def main():
         # cut long titles to fit in a tweet
         if len(papers_titles[paper]) > 116:
             papers_titles[paper] = papers_titles[paper][0:115] + "…"
-        papers_links[paper] = "http://econpapers.repec.org" + parsed_lists[paper].find_next('a')['href']
+        papers_links[paper] = "https://econpapers.repec.org" + parsed_lists[paper].find_next('a')['href']
 
         if tweets:
             # if length of paper's title is less than length of tweet,
